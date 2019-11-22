@@ -12,17 +12,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
   interface IdliButton {
     /**
-    * The first name
+    * Button size sm|md|lg
     */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
+    'size': string;
   }
 }
 
@@ -42,17 +34,9 @@ declare global {
 declare namespace LocalJSX {
   interface IdliButton {
     /**
-    * The first name
+    * Button size sm|md|lg
     */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
+    'size'?: string;
   }
 
   interface IntrinsicElements {
