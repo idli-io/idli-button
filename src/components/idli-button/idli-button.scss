@@ -81,10 +81,10 @@
   &.variant-default {
     color: rgba(0, 0, 0, 0.65);
     background-color: var(--color, var(--color-white, #fff));
-    border: 1px solid #d9d9d9;
+    border: 1px solid var(--color-gray-6, #9f9eb2);
 
     &:after {
-      background: var(--color-indigo-3);
+      background: var(--color-indigo-3, #bcbaff);
     }
 
     &:hover, &:focus {
@@ -98,7 +98,7 @@
     background-color: var(--color-primary, #4c48ff);
 
     &:after {
-      background: var(--color-indigo-3);
+      background: var(--color-indigo-3, #bcbaff);
     }
 
     &:hover, &:focus {
@@ -111,11 +111,11 @@
     background-color: var(--color-red-6, #ff4c47);
 
     &:after {
-      background: var(--color-red-3);
+      background: var(--color-red-3, #ffbbb9);
     }
 
     &:hover, &:focus {
-      background-color: var(--color-red-5, #7d79ff);
+      background-color: var(--color-red-5, #ff7c78);
     }
   }
 

@@ -3,7 +3,7 @@
 ## Using this component
 
 ### Script tag
-- Put a script tag similar to this `<script src='https://unpkg.com/@idli/idli-button@0.0.1/dist/idli-button.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/@idli/idli-button@0.1.0/dist/idli-button.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
@@ -15,3 +15,20 @@
 - Run `npm install @idli/idli-button --save`
 - Add an import to the npm packages `import @idli/idli-button;`
 - Then you can use the element anywhere in your template, JSX, html etc
+
+
+Sample Code
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src='https://unpkg.com/@idli/idli-button@0.1.0/dist/idli-button.js'></script>
+</head>
+<body>
+  <idli-button size="lg" variant="primary"></idli-button>
+</body>
+</html>
+```
