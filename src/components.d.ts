@@ -15,6 +15,10 @@ export namespace Components {
     * Button size sm|md|lg
     */
     'size': string;
+    /**
+    * Button variant default|primary|dashed|danger|link
+    */
+    'variant': string;
   }
 }
 
@@ -37,6 +41,10 @@ declare namespace LocalJSX {
     * Button size sm|md|lg
     */
     'size'?: string;
+    /**
+    * Button variant default|primary|dashed|danger|link
+    */
+    'variant'?: string;
   }
 
   interface IntrinsicElements {

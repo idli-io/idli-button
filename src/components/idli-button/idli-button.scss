@@ -1,16 +1,31 @@
 :host {
   --padding-lg: var(--padding-top-lg, var(--space-5, 20px)) var(--padding-right-lg, var(--space-5, 20px)) var(--padding-bottom-lg, var(--space-5, 20px)) var(--padding-left-lg, var(--space-5, 20px));
   --padding-md: var(--padding-top-md, var(--space-3, 12px)) var(--padding-right-md, var(--space-3, 12px)) var(--padding-bottom-md, var(--space-3, 12px)) var(--padding-left-md, var(--space-3, 12px));
+  --padding-sm: var(--padding-top-sm, var(--space-2, 8px)) var(--padding-right-md, var(--space-2, 8px)) var(--padding-bottom-md, var(--space-2, 8px)) var(--padding-left-md, var(--space-2, 8px));
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
 }
 
 .idli-button-component {
 
-  font-weight: var(--font-weight-bold, 700);
-  letter-spacing: var(--letter-spacing-wide, 0.04em);
-  box-shadow: var(--elevation-3, 0px 2px 4px rgba(2, 8, 20, 0.1), 0px 1px 2px rgba(2, 8, 20, 0.08));
+  font-weight: var(--font-weight-regular, 400);
+  letter-spacing: var(--letter-spacing-solid, 0em);
+  line-height: 0;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
   border-radius: 5px;
-  color: var(--color, var(--color-white, #fff));
-  background-color: var(--color-primary, #4c48ff);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -20,16 +35,89 @@
   border-color: initial;
   border-image: initial;
   outline: none;
-  font-family: var(--font-normal, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol);
+  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  font-family: var(--font-normal, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol');
+  position: relative;
 
   &.size-lg {
-    padding: var(--padding-lg);
-    font-size: var(--font-size-4, 14px);
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
   }
 
   &.size-md {
-    padding: var(--padding-md);
-    font-size: var(--font-size-2, 12px);
+    padding: 0 15px;
+    height: 32px;
+    font-size: 14px;
   }
+
+  &.size-sm {
+    height: 24px;
+    padding: 0 7px;
+    font-size: 14px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    transition: all 0.8s
+  }
+
+  &:active:after {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transition: 0s
+  }
+
+  &.variant-default {
+    color: rgba(0, 0, 0, 0.65);
+    background-color: var(--color, var(--color-white, #fff));
+    border: 1px solid #d9d9d9;
+
+    &:after {
+      background: var(--color-indigo-3);
+    }
+
+    &:hover, &:focus {
+      color: var(--color-primary, #4c48ff);
+      border-color: var(--color-primary, #4c48ff);
+    }
+  }
+
+  &.variant-primary {
+    color: var(--color, var(--color-white, #fff));
+    background-color: var(--color-primary, #4c48ff);
+
+    &:after {
+      background: var(--color-indigo-3);
+    }
+
+    &:hover, &:focus {
+      background-color: var(--color-indigo-5, #7d79ff);
+    }
+  }
+
+  &.variant-danger {
+    color: var(--color, var(--color-white, #fff));
+    background-color: var(--color-red-6, #ff4c47);
+
+    &:after {
+      background: var(--color-red-3);
+    }
+
+    &:hover, &:focus {
+      background-color: var(--color-red-5, #7d79ff);
+    }
+  }
+
 
 }
