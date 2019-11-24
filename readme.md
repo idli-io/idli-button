@@ -17,7 +17,18 @@
 - Then you can use the element anywhere in your template, JSX, html etc
 
 
-Sample Code
+
+#### Example:
+<!---
+```
+<custom-element-demo>
+  <template>
+    <script src='https://unpkg.com/@idli/idli-button@0.5.0/dist/idli-button.js'></script>
+    <idli-button size="lg" variant="primary">Click me</idli-button>
+  </template>
+</custom-element-demo>
+```
+-->
 ```html
 <!DOCTYPE html>
 <html>
@@ -25,12 +36,15 @@ Sample Code
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
-  <script src='https://unpkg.com/@idli/idli-button@0.1.5/dist/idli-button.js'></script>
+  <script src='https://unpkg.com/@idli/idli-button@0.5.0/dist/idli-button.js'></script>
 </head>
 <body>
-  <idli-button size="lg" variant="primary"></idli-button>
+  <idli-button size="lg" variant="primary">Click me</idli-button>
 </body>
 </html>
 ```
+
+#### Screenshot:
+![Screenshot](screenshot.png?raw=true "Screenshot")
 
 [Demo](https://jsbin.com/kirumuc/edit?html,output)

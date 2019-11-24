@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <title>Stencil Component Starter</title>
 
-  <script type="module" src="/build/idli-button.esm.js"></script>
-  <script nomodule src="/build/idli-button.js"></script>
-  <link href="http://idli.io/idli-theme/index.css" rel="stylesheet" type="text/css"/>
+    <script type="module" src="/build/idli-button.esm.js"></script>
+    <script nomodule src="/build/idli-button.js"></script>
+    <link href="http://idli.io/idli-theme/index.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
-  <div>
-    <p>small</p>
+<h2>Size</h2>
+<div>
+    <h3>Small</h3>
     <idli-button size="sm">Default</idli-button>
     <idli-button size="sm" variant="primary">Primary</idli-button>
     <idli-button size="sm" variant="danger">Danger</idli-button>
-  </div>
+    <idli-button size="sm" variant="dashed">Dashed</idli-button>
+    <idli-button size="sm" variant="link">Link</idli-button>
+</div>
 
-  <div>
-    <p>medium</p>
+<div>
+    <h3>Medium</h3>
     <idli-button>Default</idli-button>
     <idli-button variant="primary">Primary</idli-button>
     <idli-button variant="danger">Danger</idli-button>
-  </div>
+    <idli-button variant="dashed">Dashed</idli-button>
+    <idli-button variant="link">Link</idli-button>
+</div>
 
-  <div>
-    <p>large</p>
+<div>
+    <h3>Large</h3>
     <idli-button size="lg">Default</idli-button>
     <idli-button size="lg" variant="primary">Primary</idli-button>
     <idli-button size="lg" variant="danger">Danger</idli-button>
-  </div>
+    <idli-button size="lg" variant="dashed">Dashed</idli-button>
+    <idli-button size="lg" variant="link">Link</idli-button>
+</div>
+<hr>
+<h2>Disabled</h2>
+<div>
+    <idli-button disabled>Default (disabled)</idli-button>
+    <idli-button variant="primary" disabled="true">Primary (disabled)</idli-button>
+    <idli-button variant="danger" disabled="true">Danger (disabled)</idli-button>
+    <idli-button variant="dashed" disabled="true">Dashed (disabled)</idli-button>
+    <idli-button variant="link" disabled="true">Link (disabled)</idli-button>
+</div>
+<hr>
+<h2>Block</h2>
+<div>
+    <div style="width: 300px; border: 1px solid black; padding: 10px">
+        <p>Parent container</p>
+        <idli-button block>Default (block)</idli-button>
+        <idli-button variant="primary" block="true">Primary (block)</idli-button>
+        <idli-button variant="danger" block="true">Danger (block)</idli-button>
+        <idli-button variant="dashed" block="true">Dashed (block)</idli-button>
+        <idli-button variant="link" block="true">Link (block)</idli-button>
+    </div>
+</div>
 
 </body>
 </html>

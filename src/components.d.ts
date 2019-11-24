@@ -12,13 +12,21 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
   interface IdliButton {
     /**
-    * Button size sm|md|lg
+    * If true, fits button width to its parent width. Defaults to `false`.
     */
-    'size': string;
+    'block': boolean;
     /**
-    * Button variant default|primary|dashed|danger|link
+    * If true, the user cannot interact with the button. Defaults to `false`.
     */
-    'variant': string;
+    'disabled': boolean;
+    /**
+    * The button size. Possible values are: `"sm"`, `"md"`, `"lg"`. Defaults to `"md"`.
+    */
+    'size': 'sm' | 'md' | 'lg';
+    /**
+    * Button variants Possible values are `"default"`, `"primary"`, `"dashed"`, `"danger"`, `"link"`. Defaults to `"default"`.
+    */
+    'variant': 'default' | 'primary' | 'dashed' | 'danger' | 'link';
   }
 }
 
@@ -38,13 +46,21 @@ declare global {
 declare namespace LocalJSX {
   interface IdliButton {
     /**
-    * Button size sm|md|lg
+    * If true, fits button width to its parent width. Defaults to `false`.
     */
-    'size'?: string;
+    'block'?: boolean;
     /**
-    * Button variant default|primary|dashed|danger|link
+    * If true, the user cannot interact with the button. Defaults to `false`.
     */
-    'variant'?: string;
+    'disabled'?: boolean;
+    /**
+    * The button size. Possible values are: `"sm"`, `"md"`, `"lg"`. Defaults to `"md"`.
+    */
+    'size'?: 'sm' | 'md' | 'lg';
+    /**
+    * Button variants Possible values are `"default"`, `"primary"`, `"dashed"`, `"danger"`, `"link"`. Defaults to `"default"`.
+    */
+    'variant'?: 'default' | 'primary' | 'dashed' | 'danger' | 'link';
   }
 
   interface IntrinsicElements {
