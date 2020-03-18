@@ -1,6 +1,6 @@
 {
   "name": "@idli/idli-button",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Idli Button",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -21,19 +21,26 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
   },
+  "keywords": [
+    "idli",
+    "idli button",
+    "web component",
+    "button component"
+  ],
   "devDependencies": {
     "@stencil/core": "^1.3.3",
-    "@stencil/sass": "^1.1.1"
+    "@stencil/sass": "^1.1.1",
+    "@idli/theme": "^1.0.2"
   },
-  "license": "MIT",
-  "dependencies": {},
+  "author": "Shivaji Varma <contact@shivajivarma.com>",
+  "contributors": [],
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/idli-io/idli-button.git"
   },
-  "author": "",
   "bugs": {
     "url": "https://github.com/idli-io/idli-button/issues"
   },
-  "homepage": "https://github.com/idli-io/idli-button#readme"
+  "homepage": "https://idli.io/button.html"
 }

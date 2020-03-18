@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-    <title>Stencil Component Starter</title>
+    <title>Idli button</title>
 
     <script type="module" src="/build/idli-button.esm.js"></script>
     <script nomodule src="/build/idli-button.js"></script>
-    <link href="http://idli.io/idli-theme/index.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -59,6 +58,17 @@
         <idli-button variant="link" block="true">Link (block)</idli-button>
     </div>
 </div>
+
+<h2>Event</h2>
+<div>
+    <idli-button id="click-button">Click me</idli-button>
+</div>
+
+<script>
+    document.getElementById('click-button').addEventListener('buttonClick', function() {
+        alert('Button clicked');
+    });
+</script>
 
 </body>
 </html>

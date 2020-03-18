@@ -3,7 +3,7 @@
 ## Using this component
 
 ### Script tag
-- Put a script tag similar to this `<script src='https://unpkg.com/@idli/idli-button@0.1.5/dist/idli-button.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/@idli/idli-button@0.6.0/dist/idli-button.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
@@ -35,8 +35,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-  <script src='https://unpkg.com/@idli/idli-button@0.5.0/dist/idli-button.js'></script>
+  <title>Idli button</title>
+  <script src='https://unpkg.com/@idli/idli-button@0.6.0/dist/idli-button.js'></script>
 </head>
 <body>
   <idli-button size="lg" variant="primary">Click me</idli-button>
@@ -44,7 +44,11 @@
 </html>
 ```
 
-#### Screenshot:
-![Screenshot](screenshot.png?raw=true "Screenshot")
+#### Demo:
+[Click here for demo](http://idli.io/button.html)
 
-[Demo](https://jsbin.com/kirumuc/edit?html,output)
+## Code of Conduct
+[Contributor Covenant](/CODE_OF_CONDUCT.md)
+
+## License
+[Apache License 2.0](/LICENSE)

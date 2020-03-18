@@ -1,4 +1,4 @@
-import {Component, Prop, h} from '@stencil/core';
+import {Component, Prop, h, EventEmitter, Event} from '@stencil/core';
 
 @Component({
     tag: 'idli-button',
@@ -47,13 +47,26 @@ export class IdliButton {
     }
 
     getBlockClass() {
+        let block = '';
         if (this.block)
-            return 'block';
+            block = 'block';
+        return block;
+    }
+
+    /**
+     * On click of button a CustomEvent 'buttonClick' will be triggered.
+     */
+    @Event() buttonClick: EventEmitter;
+
+    handleButtonClick(event: any) {
+        if (!this.disabled)
+            this.buttonClick.emit(event);
     }
 
     render() {
         return <button
             class={"idli-button-component " + this.getSizeClass() + " " + this.getVariantClass() + " " + this.getBlockClass()}
+            onClick={(evt) => this.handleButtonClick(evt)}
             disabled={this.disabled}>
             <slot/>
         </button>;

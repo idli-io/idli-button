@@ -54,6 +54,10 @@ declare namespace LocalJSX {
     */
     'disabled'?: boolean;
     /**
+    * On click of button a CustomEvent 'buttonClick' will be triggered.
+    */
+    'onButtonClick'?: (event: CustomEvent<any>) => void;
+    /**
     * The button size. Possible values are: `"sm"`, `"md"`, `"lg"`. Defaults to `"md"`.
     */
     'size'?: 'sm' | 'md' | 'lg';

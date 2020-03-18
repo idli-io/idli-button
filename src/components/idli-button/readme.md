@@ -15,6 +15,13 @@
 | `variant`  | `variant`  | Button variants Possible values are `"default"`, `"primary"`, `"dashed"`, `"danger"`, `"link"`. Defaults to `"default"`. | `"danger" \| "dashed" \| "default" \| "link" \| "primary"` | `'default'` |
 
 
+## Events
+
+| Event         | Description                                                       | Type               |
+| ------------- | ----------------------------------------------------------------- | ------------------ |
+| `buttonClick` | On click of button a CustomEvent 'buttonClick' will be triggered. | `CustomEvent<any>` |
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
