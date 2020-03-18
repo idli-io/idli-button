@@ -24,7 +24,11 @@
 <custom-element-demo>
   <template>
     <script src='https://unpkg.com/@idli/idli-button@0.5.0/dist/idli-button.js'></script>
-    <idli-button size="lg" variant="primary">Click me</idli-button>
+    <idli-button>Default</idli-button>
+    <idli-button variant="primary">Primary</idli-button>
+    <idli-button variant="danger">Danger</idli-button>
+    <idli-button variant="dashed">Dashed</idli-button>
+    <idli-button variant="link">Link</idli-button>
   </template>
 </custom-element-demo>
 ```
@@ -39,7 +43,11 @@
   <script src='https://unpkg.com/@idli/idli-button@0.6.0/dist/idli-button.js'></script>
 </head>
 <body>
-  <idli-button size="lg" variant="primary">Click me</idli-button>
+  <idli-button>Default</idli-button>
+  <idli-button variant="primary">Primary</idli-button>
+  <idli-button variant="danger">Danger</idli-button>
+  <idli-button variant="dashed">Dashed</idli-button>
+  <idli-button variant="link">Link</idli-button>
 </body>
 </html>
 ```
