@@ -1,6 +1,6 @@
 {
   "name": "@idli/idli-button",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Idli Button",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
