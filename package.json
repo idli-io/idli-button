@@ -1,6 +1,6 @@
 {
   "name": "@idli/idli-button",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Idli Button",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -42,5 +42,5 @@
   "bugs": {
     "url": "https://github.com/idli-io/idli-button/issues"
   },
-  "homepage": "https://idli.io/button.html"
+  "homepage": "https://idli.io/component/button.html"
 }

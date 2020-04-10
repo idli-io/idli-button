@@ -53,7 +53,7 @@
 ```
 
 #### Demo:
-[Click here for demo](http://idli.io/button.html)
+[Click here for demo](http://idli.io/component/button.html)
 
 ## Code of Conduct
 [Contributor Covenant](/CODE_OF_CONDUCT.md)
