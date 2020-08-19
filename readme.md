@@ -3,7 +3,7 @@
 ## Using this component
 
 ### Script tag
-- Put a script tag similar to this `<script src='https://unpkg.com/@idli/idli-button@0.6.3/dist/idli-button.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/@idli/idli-button@0.6.4/dist/idli-button.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
@@ -23,7 +23,7 @@
 ```
 <custom-element-demo>
   <template>
-    <script src='https://unpkg.com/@idli/idli-button@0.6.3/dist/idli-button.js'></script>
+    <script src='https://unpkg.com/@idli/idli-button@0.6.4/dist/idli-button.js'></script>
     <idli-button>Default</idli-button>
     <idli-button variant="primary">Primary</idli-button>
     <idli-button variant="danger">Danger</idli-button>
@@ -40,7 +40,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Idli button</title>
-  <script src='https://unpkg.com/@idli/idli-button@0.6.3/dist/idli-button.js'></script>
+  <script src='https://unpkg.com/@idli/idli-button@0.6.4/dist/idli-button.js'></script>
 </head>
 <body>
   <idli-button>Default</idli-button>
